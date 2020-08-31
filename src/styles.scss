@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'app/stylesheets/fonts/font.scss';
+@use 'app/stylesheets/color/color.scss';
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  color: color.$white;
+  font-family: "poppinsregular";
+}
+
+.main-accent{
+  color: color.$main-color;
+}
+
+.paragraph{
+  color: color.$paragraph-grey;
+}
+
+.noto-font{
+  font-family: "notoserifregular";
+}
