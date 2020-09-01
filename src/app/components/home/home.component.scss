@@ -1,0 +1,71 @@
+@use '../../stylesheets/color/color.scss';
+
+.home {
+  .landing {
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+
+    .landing-slide {
+    }
+
+    .call-to-action {
+      position: relative;
+      height: inherit;
+      background-image: url("../../../assets/logo/CTA.jpg");
+      background: no-repeat cover;
+      background-size: 100% 100%;
+      color: color.$black;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: color.$white;
+        opacity: 0.75;
+      }
+      .CTA {
+
+        position: absolute;
+        top: 30%;
+        padding: 20px;
+        text-align: center;
+
+        button {
+          background-color: color.$primary-blue;
+          font-size: 16px;
+          padding: 10px 20px;
+          border-radius: 20px;
+          border: none;
+          color: color.$white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .home {
+    .landing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .landing-slide {
+        grid-column: 1/2;
+      }
+
+      .call-to-action {
+        grid-column: 2/3;
+
+        .CTA {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+        }
+      }
+    }
+  }
+}
