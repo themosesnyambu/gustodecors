@@ -1,0 +1,55 @@
+@use '../../../stylesheets/mixins/layout';
+
+.birth {
+  position: relative;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+
+  .line {
+    width: 46%;
+    @include layout.position-absolute(21%, 0);
+  }
+
+  h5,
+  h3 {
+    text-align: center;
+  }
+  img {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+
+@media (min-width: 600px) {
+  .birth {
+    position: relative;
+    height: 700px;
+
+    .line {
+      width: 6%;
+      @include layout.position-absolute(36%, 57%);
+    }
+
+    h5,
+    h3 {
+      text-align: left;
+    }
+    h3{
+      @include layout.position-absolute(30%, 60%);
+    }
+    h5{
+      @include layout.position-absolute(25%, 60%);
+    }
+    p{
+      @include layout.position-absolute(35%, 60%);
+      width: 400px;
+    }
+    img {
+      @include layout.position-absolute(10%, 10%);
+      // margin-left: 5%;
+      width: 40%;
+      height: 300px;
+    }
+  }
+}

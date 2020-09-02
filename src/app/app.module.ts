@@ -13,6 +13,9 @@ import { RebuildDesignComponent } from './components/rebuilds/rebuild-design/reb
 import { RebuildDetailComponent } from './components/rebuilds/rebuild-detail/rebuild-detail.component';
 import { RebuildFinishingComponent } from './components/rebuilds/rebuild-finishing/rebuild-finishing.component';
 import { DnaIndexComponent } from './components/dna/dna-index/dna-index.component';
+import { UsComponent } from './components/dna/us/us.component';
+import { BirthComponent } from './components/dna/birth/birth.component';
+import { VisionComponent } from './components/dna/vision/vision.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { DnaIndexComponent } from './components/dna/dna-index/dna-index.componen
     RebuildDesignComponent,
     RebuildDetailComponent,
     RebuildFinishingComponent,
-    DnaIndexComponent
+    DnaIndexComponent,
+    UsComponent,
+    BirthComponent,
+    VisionComponent
     ],
   imports: [
     BrowserModule,

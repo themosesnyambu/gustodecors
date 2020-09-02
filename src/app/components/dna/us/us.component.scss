@@ -1,0 +1,44 @@
+@use '../../../stylesheets/mixins/layout';
+
+.us {
+  position: relative;
+  padding: 20px;
+
+  .line {
+    width: 70px;
+  }
+
+  .line1 {
+    @include layout.position-absolute(30%, 0);
+  }
+
+  .line2 {
+    @include layout.position-absolute(30%, auto, 0);
+  }
+
+  h5,
+  h3 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .us {
+
+    .line {
+      width: 200px;
+    }
+
+
+    .us-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .paragraph {
+        width: 500px;
+        margin: 40px;
+      }
+    }
+  }
+}
