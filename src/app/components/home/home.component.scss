@@ -1,18 +1,54 @@
 @use '../../stylesheets/color/color.scss';
 
 .home {
+  .hat {
+    position: relative;
+    height: 700px;
+    width: 100vw;
+    background-image: url("../../../assets/images/hatsmall.jpg");
+    background: cover no-repeat;
+    background-size: 100% 100%;
+
+    .overlay {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        15deg,
+        rgba(0, 0, 0, .95) 40%,
+        rgba(0, 0, 0, .85) 70%,
+        rgba(0, 0, 0, .75) 80%
+      );
+
+      .goals{
+        position: absolute;
+        top: 60%;
+        margin-left: 50px;
+        width: 300px;;
+      }
+    }
+  }
+  .patha {
+    position: absolute;
+    top: 60%;
+    z-index: 0;
+  }
+
   .landing {
     background-color: #ffffff;
     height: 100vh;
     width: 100vw;
 
     .landing-slide {
+      position: relative;
+      height: inherit;
     }
 
     .call-to-action {
       position: relative;
       height: inherit;
-      background-image: url("../../../assets/logo/CTA.jpg");
+      background-image: url("../../../assets/images/homebgsmall.jpg");
       background: no-repeat cover;
       background-size: 100% 100%;
       color: color.$black;
@@ -24,10 +60,9 @@
         height: 100%;
         width: 100%;
         background-color: color.$white;
-        opacity: 0.75;
+        opacity: 0.4;
       }
       .CTA {
-
         position: absolute;
         top: 30%;
         padding: 20px;
@@ -54,16 +89,17 @@
 
       .landing-slide {
         grid-column: 1/2;
+        grid-row: 1;
       }
 
       .call-to-action {
+        background-image: url("../../../assets/images/home-bg.jpg");
         grid-column: 2/3;
 
         .CTA {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-
         }
       }
     }

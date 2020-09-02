@@ -1,0 +1,61 @@
+@use '../../stylesheets/color/color.scss';
+.brown-path {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin-top: -20%;
+
+  .waiting {
+    position: relative;
+    margin-top: 25%;
+    margin-left: 10%;
+    width: 500px;
+    height: 342px;
+  }
+
+  .our-dna {
+    position: relative;
+    z-index: 1;
+    margin-top: -5%;
+    background-color: color.$main-background;
+    height: 600px;
+    width: 70%;
+    float: right;
+
+    .dna-header {
+      position: absolute;
+      top: -10%;
+      font-size: 120px;
+      margin-left: -160px;
+    }
+    .know-us {
+      position: absolute;
+      top: 30%;
+      left: 25%;
+    }
+
+    .dna-line {
+      position: absolute;
+      top: 42%;
+      left: -16%;
+      background-color: color.$main-color;
+      width: 320px;
+      height: 2px;
+    }
+    .dna-content {
+      position: absolute;
+      margin-left: 20%;
+      top: 40%;
+      width: 55%;
+      text-align: left;
+
+      button {
+        background-color: color.$main-color;
+        border: none;
+        padding: 15px 20px;
+        color: color.$white;
+        margin-top: 20px;
+      }
+    }
+  }
+}

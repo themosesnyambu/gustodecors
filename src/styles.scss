@@ -4,8 +4,11 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  width: 100vw;
   color: color.$white;
   font-family: "poppinsregular";
+  overflow-x: hidden;
+  letter-spacing: 1px;
 }
 
 .main-accent{
@@ -13,7 +16,7 @@ body {
 }
 
 .paragraph{
-  color: color.$paragraph-grey;
+  color: rgba($color: #fafafa, $alpha: 57%);
 }
 
 .noto-font{
