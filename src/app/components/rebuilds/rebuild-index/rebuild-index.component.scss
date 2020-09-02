@@ -8,16 +8,7 @@
   padding: 2opx;
 
   .overlay {
-    @include layout.position-absolute(0, 0);
     height: 105%;
-    width: 100%;
-    background: rgb(36, 36, 36);
-    background: linear-gradient(
-      180deg,
-      rgba(36, 36, 36, 0.8) 15%,
-      rgba(0, 0, 0, 1) 75%
-    );
-    z-index: 0;
   }
   .landing {
     background-image: url("../../../../assets/images/workersmall.jpg");

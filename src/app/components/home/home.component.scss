@@ -1,4 +1,6 @@
 @use '../../stylesheets/color/color.scss';
+@use '../../stylesheets/mixins/layout';
+
 
 .home {
   width: 100vw;;
@@ -28,13 +30,8 @@
       color: color.$black;
 
       .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
         background-color: color.$white;
-        opacity: 0.4;
+        opacity: 0.6;
       }
       .CTA {
         position: absolute;
@@ -62,8 +59,6 @@
 
     .overlay {
       position: relative;
-      height: 100%;
-      width: 100%;
       background: rgb(0, 0, 0);
       background: linear-gradient(
         15deg,
