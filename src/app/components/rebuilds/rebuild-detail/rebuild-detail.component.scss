@@ -1,0 +1,95 @@
+@use '../../../stylesheets/color/color.scss';
+@use '../../../stylesheets/mixins/layout';
+@use '../../../stylesheets/mixins/color-mixins';
+.detail {
+  position: relative;
+  padding: 20px;
+  height: 600px;
+
+  h1:nth-child(1) {
+    @include layout.position-absolute(50px, 20px);
+  }
+
+  h1:nth-child(2) {
+    @include layout.position-absolute(20px, 70px);
+  }
+  h3 {
+    @include layout.position-absolute(70px, 70px);
+  }
+  p {
+    @include layout.position-absolute(100px, 70px);
+    width: 70%;
+  }
+  .images {
+    @include layout.position-absolute(270px, 20px);
+    width: 100vw;
+    height: 300px;
+    display: flex;
+
+    img {
+      margin: 5px;
+    }
+
+    img:nth-child(1) {
+      width: 30%;
+    }
+    img:nth-child(2) {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .detail {
+    height: 700px;
+
+    h1:nth-child(1) {
+      @include layout.position-absolute(50px, 40px);
+      font-size: 50px;
+    }
+
+    h1:nth-child(2) {
+      @include layout.position-absolute(20px, 10%);
+    }
+    h3 {
+      @include layout.position-absolute(70px, 10%);
+    }
+    p {
+      @include layout.position-absolute(1oopx, 10%);
+      max-width: 400px;
+    }
+    .images {
+      @include layout.position-absolute(30%, 10%);
+      height: 80%;
+
+      img:nth-child(1) {
+        @include layout.position-absolute( 0%, -10px);
+        max-width: 380px;
+        height: 500px;
+      }
+      img:nth-child(2) {
+        @include layout.position-absolute(-20%, 30%);
+        width: 35%;
+        height: 105%;
+      }
+    }
+  }
+}
+
+.excitement {
+  @include layout.position-absolute(60%, 80%);
+  @include color-mixins.outline-text;
+  letter-spacing: 5px;
+  transform: rotate(270deg);
+  transform-origin: left top 0;
+  font-size: 100px;
+
+}
+
+@media (max-width: 600px) {
+  .excitement {
+    @include layout.position-absolute(40%, 83%);
+    letter-spacing: 3px;
+    font-size: 40px;
+  }
+}

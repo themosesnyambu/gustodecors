@@ -1,15 +1,11 @@
 .work {
-  display: flex;
   padding: 20px 0 20px 0;
   width: 100%;
-  align-items: center;
-  justify-content: center;
 
   div {
     position: relative;
-    width: 30%;
-    height: 400px;
-    margin: 0 5px;
+    height: 350px;
+    margin: 10px 5px;
     background: cover no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
@@ -28,5 +24,20 @@
   }
   .lights {
     background-image: url("../../../assets/images/rebuild.jpg");
+  }
+}
+
+
+@media (min-width: 600px) {
+  .work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      width: 30%;
+      height: 400px;
+      margin: 0 5px;
+    }
   }
 }

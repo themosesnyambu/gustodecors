@@ -4,21 +4,48 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  width: 100vw;
+  padding: 0;
   color: color.$white;
   font-family: "poppinsregular";
-  overflow-x: hidden;
   letter-spacing: 1px;
+  width: 100vw;
+  .site-wrapper {
+    width: 100vw;
+    overflow-x: hidden;
+  }
 }
 
-.main-accent{
+.main-accent {
   color: color.$main-color;
 }
 
-.paragraph{
+.paragraph {
   color: rgba($color: #fafafa, $alpha: 57%);
 }
 
-.noto-font{
+.noto-font {
   font-family: "notoserifregular";
+}
+
+.line {
+  height: 2px;
+  background-color: color.$main-color;
+}
+
+.gradient-bg {
+  background: rgb(36, 36, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(36, 36, 36, 0.8) 01%,
+    rgba(0, 0, 0, 1) 10%
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
 }

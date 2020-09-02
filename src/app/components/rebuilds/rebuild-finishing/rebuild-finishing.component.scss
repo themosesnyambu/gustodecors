@@ -1,0 +1,75 @@
+@use '../../../stylesheets/mixins/layout';
+
+.finishing {
+  position: relative;
+  padding: 20px;
+  height: 500px;
+
+  h1:nth-child(1) {
+    @include layout.position-absolute(50px, 20px);
+  }
+
+  h1:nth-child(2) {
+    @include layout.position-absolute(20px, 70px);
+  }
+  h3 {
+    @include layout.position-absolute(70px, 70px);
+  }
+  p {
+    @include layout.position-absolute(100px, 70px);
+    width: 70%;
+  }
+  .images {
+    @include layout.position-absolute(270px, 20px);
+    width: 100vw;
+    height: 300px;
+
+    img:nth-child(1) {
+      @include layout.position-absolute(5%, 0);
+      width: 40%;
+    }
+    img:nth-child(2) {
+      @include layout.position-absolute(0, 45%);
+      width: 45%;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .finishing {
+    height: 900px;
+
+    h1:nth-child(1) {
+      @include layout.position-absolute(50px, 40px);
+      font-size: 50px;
+    }
+
+    h1:nth-child(2) {
+      @include layout.position-absolute(20px, 10%);
+
+    }
+    h3 {
+      @include layout.position-absolute(70px, 10%);
+    }
+    p {
+      @include layout.position-absolute(100px, 10%);
+
+      max-width: 400px;
+    }
+    .images {
+      @include layout.position-absolute(25%, 10%);
+      height: 80%;
+
+      img:nth-child(1) {
+        @include layout.position-absolute(0, -45px);
+        width: 48%;
+        height: 500px;
+      }
+      img:nth-child(2) {
+        @include layout.position-absolute(-15%, 50%);
+        width: 35%;
+        height: 100%;
+      }
+    }
+  }
+}

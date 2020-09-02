@@ -1,0 +1,13 @@
+@use '../color/color';
+
+@mixin gradient-bg() {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin outline-text() {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: color.$main-color;
+}

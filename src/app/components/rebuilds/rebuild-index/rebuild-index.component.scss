@@ -1,0 +1,70 @@
+@use '../../../stylesheets/color/color';
+@use '../../../stylesheets/mixins/layout';
+@use '../../../stylesheets/mixins/color-mixins';
+
+
+.rebuilds {
+  width: 100vw;
+  padding: 2opx;
+
+  .overlay {
+    @include layout.position-absolute(0, 0);
+    height: 105%;
+    width: 100%;
+    background: rgb(36, 36, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(36, 36, 36, 0.8) 15%,
+      rgba(0, 0, 0, 1) 75%
+    );
+    z-index: 0;
+  }
+  .landing {
+    background-image: url("../../../../assets/images/workersmall.jpg");
+    height: 100vh;
+    background: cover no-repeat;
+
+    .call-to-action {
+      @include layout.position-absolute(50%, 50%);
+      height: 400px;
+      color: color.$main-color;
+      transform: translate(-50%, -50%);
+
+      .rebuild {
+        font-size: 60px;
+        @include color-mixins.outline-text;
+      }
+    }
+
+    .line1 {
+      @include layout.position-absolute(38%, 0%);
+      width: 25%;
+    }
+
+    .line2 {
+      width: 30%;
+      @include layout.position-absolute(50%, auto, 0);
+    }
+  }
+}
+
+
+@media (min-width: 600px) {
+
+  .rebuilds {
+
+    .landing {
+      background-size: 100% 100%;
+
+      .call-to-action {
+        height: 800px;
+
+
+        .rebuild {
+          font-size: 200px;
+          // lin
+        }
+      }
+    }
+  }
+  }

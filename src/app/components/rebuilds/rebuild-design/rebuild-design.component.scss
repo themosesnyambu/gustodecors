@@ -1,0 +1,88 @@
+.design {
+  position: relative;
+  padding: 20px;
+  height: 400px;
+  width: inherit;
+
+  h1:nth-child(1) {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+
+  h1:nth-child(2) {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+  }
+  p {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 73%;
+  }
+  .images {
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    width: 100%;
+
+    img:nth-child(1) {
+      position: absolute;
+      top: 55px;
+      left: 20px;
+      width: 60%;
+    }
+    img:nth-child(2) {
+      position: absolute;
+      top: 0;
+      left: 40%;
+      width: 50%;
+      z-index: 1;
+    }
+  }
+}
+
+@media(max-width:600px){
+  .design{
+    margin-top: -100px;
+  }
+}
+
+@media(min-width:600px){
+  .design {
+    height: 900px;
+
+    h1:nth-child(1) {
+      top: 50px;
+      left: 40px;
+      font-size: 50px;
+    }
+
+    h1:nth-child(2) {
+      top: 20px;
+      left: 10%;
+    }
+    p {
+      left: 10%;
+      max-width: 400px;
+    }
+    .images {
+      top: 10%;
+      left: 10%;
+      width: 100vw;
+      height: 80%;
+
+      img:nth-child(1) {
+        top: 30%;
+        left: -45px;
+        width: 68%;
+      }
+      img:nth-child(2) {
+        left: 30%;
+        width: 50%;
+        height: 80%;
+      }
+    }
+  }
+}

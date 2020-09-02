@@ -8,6 +8,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomeDnaComponent } from './components/home-dna/home-dna.component';
 import { HomeWorkComponent } from './components/home-work/home-work.component';
+import { RebuildIndexComponent } from './components/rebuilds/rebuild-index/rebuild-index.component';
+import { RebuildDesignComponent } from './components/rebuilds/rebuild-design/rebuild-design.component';
+import { RebuildDetailComponent } from './components/rebuilds/rebuild-detail/rebuild-detail.component';
+import { RebuildFinishingComponent } from './components/rebuilds/rebuild-finishing/rebuild-finishing.component';
+import { DnaIndexComponent } from './components/dna/dna-index/dna-index.component';
+
 
 @NgModule({
   declarations: [
@@ -16,8 +22,13 @@ import { HomeWorkComponent } from './components/home-work/home-work.component';
     NavbarComponent,
     HomeComponent,
     HomeDnaComponent,
-    HomeWorkComponent
-  ],
+    HomeWorkComponent,
+    RebuildIndexComponent,
+    RebuildDesignComponent,
+    RebuildDetailComponent,
+    RebuildFinishingComponent,
+    DnaIndexComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule
