@@ -6,17 +6,31 @@
   width: 100vw;
 
   .landing {
+    position: relative;
     background-image: url("../../../../assets/images/hatsmall.jpg");
     background-size: 100% 100%;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     .dna-text {
       @include layout.position-absolute(50%, 50%, 0);
       z-index: 1;
       transform: translate(-50%, -50%);
       text-align: center;
-      font-size: 70px;
+      font-size: 20px;
     }
   }
+}
+
+@media(min-width: 600px){
+  .dna-s {
+
+    .landing {
+
+      .dna-text {
+        font-size: 70px;
+      }
+    }
+  }
+
 }
