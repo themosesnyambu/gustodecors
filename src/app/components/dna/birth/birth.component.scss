@@ -24,11 +24,11 @@
 @media (min-width: 600px) {
   .birth {
     position: relative;
-    height: 700px;
+    height: 500px;
 
     .line {
       width: 6%;
-      @include layout.position-absolute(36%, 57%);
+      @include layout.position-absolute(18%, 56%);
     }
 
     h5,
@@ -36,18 +36,17 @@
       text-align: left;
     }
     h3{
-      @include layout.position-absolute(30%, 60%);
+      @include layout.position-absolute(10%, 60%);
     }
     h5{
-      @include layout.position-absolute(25%, 60%);
+      @include layout.position-absolute(5%, 60%);
     }
     p{
-      @include layout.position-absolute(35%, 60%);
+      @include layout.position-absolute(18%, 60%);
       width: 400px;
     }
     img {
-      @include layout.position-absolute(10%, 10%);
-      // margin-left: 5%;
+      @include layout.position-absolute(10%, 5%);
       width: 40%;
       height: 300px;
     }

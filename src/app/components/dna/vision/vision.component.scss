@@ -1,0 +1,68 @@
+@use '../../../stylesheets/mixins/layout';
+
+.vision {
+  position: relative;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+
+  .line {
+    width: 40%;
+    @include layout.position-absolute(16%, 0);
+  }
+  p{
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  h5,
+  h3 {
+    text-align: center;
+  }
+  img {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+
+@media (min-width: 600px) {
+  .vision {
+    position: relative;
+    height: 700px;
+    margin-top: -5%;
+
+    .line {
+      width: 6%;
+      @include layout.position-absolute(11%, 7%);
+    }
+
+    h5,
+    h3 {
+      text-align: left;
+    }
+    h3{
+      @include layout.position-absolute(5%, 10%);
+    }
+    h5{
+      @include layout.position-absolute(0%, 10%);
+    }
+    p{
+      @include layout.position-absolute(10%, 10%);
+      width: 400px;
+      margin-left: 0;
+    }
+    .image1 {
+      @include layout.position-absolute(0%, 55%);
+      width: 40%;
+      height: 300px;
+      margin-left: 0;
+    }
+    .image2{
+      @include layout.position-absolute(35%, 10%);
+      width: 40%;
+      height: 300px;
+      margin-left: 0;
+
+    }
+  }
+}
