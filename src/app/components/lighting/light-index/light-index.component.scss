@@ -1,0 +1,54 @@
+@use '../../../stylesheets/color/color';
+@use '../../../stylesheets/mixins/layout';
+@use '../../../stylesheets/mixins/color-mixins';
+
+.lighting {
+  width: 100vw;
+
+  .overlay {
+    height: 105%;
+  }
+  .landing {
+    background-image: url("../../../../assets/images/lightsmall.jpg");
+    height: 100vh;
+    background: cover no-repeat;
+
+    .call-to-action {
+      @include layout.position-absolute(50%, 50%);
+      height: 400px;
+      color: color.$main-color;
+      transform: translate(-50%, -50%);
+
+      .light {
+        font-size: 60px;
+        @include color-mixins.outline-text;
+      }
+    }
+
+    .line1 {
+      @include layout.position-absolute(38%, 0%);
+      width: 25%;
+    }
+
+    .line2 {
+      width: 20%;
+      @include layout.position-absolute(38%, auto, 0);
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .lighting {
+    .landing {
+      background-size: 100% 100%;
+
+      .call-to-action {
+        height: 800px;
+
+        .light {
+          font-size: 200px;
+        }
+      }
+    }
+  }
+}

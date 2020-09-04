@@ -16,6 +16,9 @@ import { DnaIndexComponent } from './components/dna/dna-index/dna-index.componen
 import { UsComponent } from './components/dna/us/us.component';
 import { BirthComponent } from './components/dna/birth/birth.component';
 import { VisionComponent } from './components/dna/vision/vision.component';
+import { LightIndexComponent } from './components/lighting/light-index/light-index.component';
+import { LightEngineeringComponent } from './components/lighting/light-engineering/light-engineering.component';
+import { LightResultsComponent } from './components/lighting/light-results/light-results.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { VisionComponent } from './components/dna/vision/vision.component';
     DnaIndexComponent,
     UsComponent,
     BirthComponent,
-    VisionComponent
+    VisionComponent,
+    LightIndexComponent,
+    LightEngineeringComponent,
+    LightResultsComponent
     ],
   imports: [
     BrowserModule,
