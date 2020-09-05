@@ -19,6 +19,9 @@ import { VisionComponent } from './components/dna/vision/vision.component';
 import { LightIndexComponent } from './components/lighting/light-index/light-index.component';
 import { LightEngineeringComponent } from './components/lighting/light-engineering/light-engineering.component';
 import { LightResultsComponent } from './components/lighting/light-results/light-results.component';
+import { JoinIndexComponent } from './components/join/join-index/join-index.component';
+import { JoinFormComponent } from './components/join/join-form/join-form.component';
+
 
 
 @NgModule({
@@ -39,7 +42,9 @@ import { LightResultsComponent } from './components/lighting/light-results/light
     VisionComponent,
     LightIndexComponent,
     LightEngineeringComponent,
-    LightResultsComponent
+    LightResultsComponent,
+    JoinIndexComponent,
+    JoinFormComponent
     ],
   imports: [
     BrowserModule,

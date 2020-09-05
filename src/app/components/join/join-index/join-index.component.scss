@@ -1,15 +1,17 @@
-@use '../../../stylesheets/color/color';
 @use '../../../stylesheets/mixins/layout';
 @use '../../../stylesheets/mixins/color-mixins';
+@use '../../../stylesheets/color/color';
 
-.lighting {
+.join {
   width: 100vw;
+  padding: 2opx;
 
   .overlay {
     height: 105%;
   }
   .landing {
-    background-image: url("../../../../assets/images/lightsmall.jpg");
+    position: relative;
+    background-image: url("../../../../assets/images/handshakesmall.jpg");
     height: 100vh;
     background: cover no-repeat;
 
@@ -19,7 +21,7 @@
       color: color.$main-color;
       transform: translate(-50%, -50%);
 
-      .light {
+      .joinus {
         font-size: 60px;
         @include color-mixins.outline-text;
       }
@@ -27,38 +29,37 @@
 
     .line1 {
       @include layout.position-absolute(38%, 0%);
-      width: 25%;
+      width: 30%;
     }
 
     .line2 {
-      width: 20%;
+      width: 35%;
       @include layout.position-absolute(38%, auto, 0);
     }
   }
 }
 
 @media (min-width: 600px) {
-  .lighting {
+  .join {
     .landing {
       background-size: 100% 100%;
 
       .call-to-action {
         height: 800px;
 
-        .light {
+        .joinus {
           font-size: 200px;
         }
       }
+
       .line1 {
         @include layout.position-absolute(45%, 15%);
         width: 16%;
       }
       .line2 {
         @include layout.position-absolute(48%, 60%);
-        width: 20%;
+        width: 16%;
       }
-
-
     }
   }
 }

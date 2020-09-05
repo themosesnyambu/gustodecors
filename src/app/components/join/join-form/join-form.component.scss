@@ -1,0 +1,65 @@
+@use '../../../stylesheets/color/color';
+
+.join-form {
+  padding: 20px;
+  text-align: center;
+
+  .tab-group {
+    margin-bottom: 20px;
+    margin: 10px auto;
+
+    .tab {
+      background: none;
+      padding: 10px 40px;
+      border-radius: 5px;
+      color: color.$white;
+    }
+  }
+  input,
+  textarea {
+    background: none;
+    border: solid 1px #ffffff;
+    color: color.$white;
+    width: 80%;
+    border-radius: 5px;
+  }
+
+  input {
+    height: 40px;
+    margin: 5px 0;
+    padding-left: 10px;
+  }
+  textarea {
+    display: block;
+    margin: 5px auto;
+    height: 80px;
+  }
+  .submit {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: color.$main-color;
+    border-radius: 2px;
+    color: color.$white;
+  }
+}
+
+@media (min-width: 600px) {
+  .join-form {
+    p {
+      display: block;
+      margin: auto;
+      width: 50%;
+    }
+    .tab-group {
+      width: 50%;
+
+      .tab {
+        width: 50%;
+      }
+    }
+    input,
+    textarea {
+      width: 50%;
+    }
+  }
+}

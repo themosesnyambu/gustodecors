@@ -1,0 +1,31 @@
+<div class="join-form">
+  <p>
+    We love how you have chosen style and class. Just fill in the form below and
+    we will sort it out for you.
+  </p>
+  <div class="tab-group">
+    <button class="tab" (click)="changeTab('individual')" > individual </button>
+    <button class="tab" (click)="changeTab('company')" > company </button>
+  </div>
+  <div *ngIf="tab=='individual'; else thenblock;" >
+    <form>
+      <input type="text" placeholder="Enter your name"/>
+      <input type="text" placeholder="Enter your email"/>
+      <input type="text" placeholder="Enter your phone number"/>
+      <input type="text" placeholder="Enter your location"/>
+      <textarea placeholder="Let's hear it then. What do you need?" ></textarea>
+      <button class="submit">SUBMIT</button>
+    </form>
+  </div>
+
+  <ng-template #thenblock >
+    <form>
+      <input type="text" placeholder="Enter your company name"/>
+      <input type="text" placeholder="Enter your company email"/>
+      <input type="text" placeholder="Enter your company phone number"/>
+      <input type="text" placeholder="Enter your company location"/>
+      <textarea placeholder="Let's hear it then. What do you need?" ></textarea>
+      <button class="submit">SUBMIT</button>
+    </form>
+  </ng-template>
+</div>
