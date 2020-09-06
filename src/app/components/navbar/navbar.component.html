@@ -1,14 +1,33 @@
+<!-- NAVIGATION BAR FULL SCREEN -->
 <div class="exclusion-navbar navbar">
-  <a href="/"
-    ><img class="logo" src="../../../assets/logo/logo.svg" alt=""
-  /></a>
+  <a href="/">
+    <img class="logo" src="../../../assets/logo/logo.svg" alt="" />
+  </a>
   <div class="navs">
+    <a href="/rebuild">
+      <div>rebuilds</div>
+    </a>
+    <a href="/lighting">
+      <div>lighting</div>
+    </a>
+    <a href="/ourworld">
+      <div>our world</div>
+    </a>
+  </div>
+  <div (click)="slideMenu()" class="nav-menu-btn">
+    <img src="../../../assets/logo/menu-btn.svg" alt="menu-btn" />
+  </div>
+</div>
 
+<!-- SIDE NAVIGATION BAR SMALL SCREEN -->
+<div [style.right]="isShown ? '0%' : '-100%'" class="sidenav">
+  <div (click)="slideMenu()" class="close-menu-btn">
+    <img style="width: 20px;" src="../../../assets/logo/close-btn.png" alt="menu-btn" />
+  </div>
+  <div class="sidenav-content">
+    <a href="/ourworld"><div>our world</div></a>
     <a href="/rebuild"><div>rebuilds</div></a>
     <a href="/lighting"><div>lighting</div></a>
-    <a href="/ourworld"><div>our world</div></a>
-  </div>
-  <div class="nav-menu-btn">
-    <img src="../../../assets/logo/menu-btn.svg" alt="menu-btn" />
+    <a href="/joinus"><div>contact us</div></a>
   </div>
 </div>

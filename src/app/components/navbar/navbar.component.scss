@@ -8,15 +8,41 @@
   padding: 0;
   width: 100%;
 
-
   .nav-menu-btn {
-   color: inherit;
+    color: inherit;
   }
 
   .navs {
     display: none;
   }
 }
+
+.sidenav {
+  position: fixed;
+  top: 5%;
+  height: 90%;
+  width: 65%;
+  background-color: #232323;
+  z-index: 10002;
+  transition: all 0.5s ease-out;
+
+  .close-menu-btn {
+    text-align: right;
+    margin: 20px;
+  }
+
+  .sidenav-content {
+    margin: 40px 20px;
+    text-align: right;
+    height: 200px;
+
+    div {
+      margin: 10px 0;
+      color: #ffffff;
+    }
+  }
+}
+
 .exclusion-navbar {
   mix-blend-mode: exclusion !important;
 }
@@ -42,5 +68,9 @@
         color: inherit;
       }
     }
+  }
+
+  .sidenav {
+    display: none;
   }
 }

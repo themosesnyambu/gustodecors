@@ -22,8 +22,6 @@ import { LightResultsComponent } from './components/lighting/light-results/light
 import { JoinIndexComponent } from './components/join/join-index/join-index.component';
 import { JoinFormComponent } from './components/join/join-form/join-form.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,13 +42,10 @@ import { JoinFormComponent } from './components/join/join-form/join-form.compone
     LightEngineeringComponent,
     LightResultsComponent,
     JoinIndexComponent,
-    JoinFormComponent
-    ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    JoinFormComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
