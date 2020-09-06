@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-home-dna',
   templateUrl: './home-dna.component.html',
@@ -10,6 +11,7 @@ export class HomeDnaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
