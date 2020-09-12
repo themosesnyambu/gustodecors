@@ -42,6 +42,44 @@
 @media (min-width: 600px) {
   .detail {
     height: 700px;
+    margin-top: 60px;
+
+    h1:nth-child(1) {
+      @include layout.position-absolute(50px, 2%);
+      font-size: 40px;
+    }
+
+    h1:nth-child(2) {
+      @include layout.position-absolute(20px, 10%);
+      font-size: 40px;
+    }
+    h3 {
+      @include layout.position-absolute(80px, 10%);
+    }
+    p {
+      @include layout.position-absolute(120px, 10%);
+      max-width: 300px;
+    }
+    .images {
+      @include layout.position-absolute(35%, 10%);
+      height: 80%;
+
+      img:nth-child(1) {
+        @include layout.position-absolute(0%, -10px);
+        max-width: 350px;
+        height: 500px;
+      }
+      img:nth-child(2) {
+        @include layout.position-absolute(-20%, 40%);
+        width: 35%;
+        height: 105%;
+      }
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .detail {
+    height: 700px;
 
     h1:nth-child(1) {
       @include layout.position-absolute(50px, 40px);
@@ -63,7 +101,7 @@
       height: 80%;
 
       img:nth-child(1) {
-        @include layout.position-absolute( 0%, -10px);
+        @include layout.position-absolute(0%, -10px);
         max-width: 380px;
         height: 500px;
       }
@@ -83,7 +121,6 @@
   transform: rotate(270deg);
   transform-origin: left top 0;
   font-size: 100px;
-
 }
 
 @media (max-width: 600px) {

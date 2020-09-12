@@ -51,6 +51,44 @@
 
 @media(min-width:600px){
   .design {
+    height: 600px;
+
+    h1:nth-child(1) {
+      top: 50px;
+      font-size: 40px;
+    }
+
+    h1:nth-child(2) {
+      top: 20px;
+      left: 10%;
+      font-size: 40px;
+    }
+    p {
+      left: 10%;
+      top: 80px;
+      max-width: 300px;
+    }
+    .images {
+      top: 23%;
+      left: 10%;
+      width: 100vw;
+      height: 80%;
+
+      img:nth-child(1) {
+        top: 20%;
+        left: -45px;
+        width: 68%;
+      }
+      img:nth-child(2) {
+        left: 40%;
+        width: 50%;
+        height: 60%;
+      }
+    }
+  }
+}
+@media(min-width:1025px){
+  .design {
     height: 900px;
 
     h1:nth-child(1) {

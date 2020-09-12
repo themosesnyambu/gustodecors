@@ -44,6 +44,32 @@
       background-image: url('../../../../assets/images/light.png');
 
       .call-to-action {
+        height: 600px;
+
+        .light {
+          font-size: 130px;
+        }
+      }
+      .line1 {
+        @include layout.position-absolute(45%, 15%);
+        width: 16%;
+      }
+      .line2 {
+        @include layout.position-absolute(48%, 60%);
+        width: 20%;
+      }
+
+
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .lighting {
+    .landing {
+      background-size: 100% 100%;
+      background-image: url('../../../../assets/images/light.png');
+
+      .call-to-action {
         height: 800px;
 
         .light {

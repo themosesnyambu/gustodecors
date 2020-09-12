@@ -37,6 +37,43 @@
 
 @media (min-width: 600px) {
   .finishing {
+    height: 700px;
+
+    h1:nth-child(1) {
+      @include layout.position-absolute(50px, 2%);
+      font-size: 40px;
+    }
+
+    h1:nth-child(2) {
+      @include layout.position-absolute(20px, 10%);
+      font-size: 40px;
+    }
+    h3 {
+      @include layout.position-absolute(80px, 10%);
+    }
+    p {
+      @include layout.position-absolute(120px, 10%);
+      max-width: 300px;
+    }
+    .images {
+      @include layout.position-absolute(35%, 10%);
+      height: 80%;
+
+      img:nth-child(1) {
+        @include layout.position-absolute(0, -45px);
+        width: 48%;
+        height: 400px;
+      }
+      img:nth-child(2) {
+        @include layout.position-absolute(-15%, 50%);
+        width: 35%;
+        height: 90%;
+      }
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .finishing {
     height: 900px;
 
     h1:nth-child(1) {
