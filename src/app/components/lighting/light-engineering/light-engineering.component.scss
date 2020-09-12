@@ -45,6 +45,49 @@
 
 @media (min-width: 600px) {
   .engineering {
+    height: 600px;
+    background-image: url("../../../../assets/images/electrician.jpg");
+    background-size: 100% 100%;
+
+    h3 {
+      text-align: left;
+      font-size: 50px;
+      letter-spacing: 3px;
+      @include layout.position-absolute(5%, 10%);
+    }
+    .line1 {
+      @include layout.position-absolute(7%, 0);
+      width: 10%;
+    }
+    .line2 {
+      width: 50%;
+      @include layout.position-absolute(15%, 80%);
+    }
+
+    p {
+      @include layout.position-absolute(20%, 10%);
+      margin-left: 0;
+      width: 40%;
+    }
+    img {
+      @include layout.position-absolute(20%, 45%);
+      width: 35%;
+    }
+    .quote {
+      @include layout.position-absolute(50%, 0%);
+      width: 40%;
+      margin-top: 40px;
+      background-color: color.$main-background;
+      p {
+        position: relative;
+        width: 80%;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .engineering {
     height: 700px;
     background-image: url("../../../../assets/images/electrician.jpg");
     background-size: 100% 100%;
