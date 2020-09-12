@@ -36,6 +36,20 @@
     justify-content: center;
 
     div {
+      width: 45%;
+      height: 400px;
+      margin: 0 5px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
       width: 30%;
       height: 400px;
       margin: 0 5px;
