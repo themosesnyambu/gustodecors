@@ -1,14 +1,17 @@
+@use '../../stylesheets/mixins/layout';
+
 .navbar {
   position: fixed;
   top: 40px;
-  left: 40px;
   z-index: 1001;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   padding: 0;
   width: 100%;
 
+  .logo {
+    @include layout.position-absolute(5px, 25px);
+  }
   .nav-menu-btn {
+    @include layout.position-absolute(5px, auto, 25px);
     color: inherit;
   }
 
@@ -46,13 +49,35 @@
 .exclusion-navbar {
   mix-blend-mode: exclusion !important;
 }
-// .exclusion-navbar {
-//   mix-blend-mode: exclusion !important;
-//   filter: invert(1) !important;
-// }
 
 @media (min-width: 600px) {
   .navbar {
+    width: calc(100% - 100px);
+    padding-left: 50px;
+  }
+
+  .sidenav {
+
+    .close-menu-btn {
+      text-align: right;
+      margin: 20px 50px;
+    }
+
+    .sidenav-content {
+      margin: 40px 50px;
+
+      div {
+        margin: 10px 40px;
+        color: #ffffff;
+      }
+    }
+  }
+
+}
+@media (min-width: 1025px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     width: calc(100% - 100px);
     padding-left: 50px;
 
