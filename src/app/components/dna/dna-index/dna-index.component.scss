@@ -28,6 +28,19 @@
     .landing {
 
       .dna-text {
+        font-size: 50px;
+      }
+    }
+  }
+
+}
+
+@media(min-width: 1025px){
+  .dna-s {
+
+    .landing {
+
+      .dna-text {
         font-size: 70px;
       }
     }

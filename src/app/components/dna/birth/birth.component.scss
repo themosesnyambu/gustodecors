@@ -43,6 +43,37 @@
     }
     p{
       @include layout.position-absolute(18%, 60%);
+      width: 300px;
+    }
+    img {
+      @include layout.position-absolute(10%, 5%);
+      width: 40%;
+      height: 300px;
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .birth {
+    position: relative;
+    height: 500px;
+
+    .line {
+      width: 6%;
+      @include layout.position-absolute(18%, 56%);
+    }
+
+    h5,
+    h3 {
+      text-align: left;
+    }
+    h3{
+      @include layout.position-absolute(10%, 60%);
+    }
+    h5{
+      @include layout.position-absolute(5%, 60%);
+    }
+    p{
+      @include layout.position-absolute(18%, 60%);
       width: 400px;
     }
     img {
