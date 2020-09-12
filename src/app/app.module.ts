@@ -21,6 +21,8 @@ import { LightEngineeringComponent } from './components/lighting/light-engineeri
 import { LightResultsComponent } from './components/lighting/light-results/light-results.component';
 import { JoinIndexComponent } from './components/join/join-index/join-index.component';
 import { JoinFormComponent } from './components/join/join-form/join-form.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,7 @@ import { JoinFormComponent } from './components/join/join-form/join-form.compone
     JoinIndexComponent,
     JoinFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
   providers: [],
   bootstrap: [AppComponent],
 })
