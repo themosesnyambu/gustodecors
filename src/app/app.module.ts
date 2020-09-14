@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -23,6 +23,8 @@ import { JoinIndexComponent } from './components/join/join-index/join-index.comp
 import { JoinFormComponent } from './components/join/join-form/join-form.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { LazyimgDirective } from './lazyimg.directive';
 
 @NgModule({
   declarations: [
@@ -45,8 +47,10 @@ import { environment } from '../environments/environment';
     LightResultsComponent,
     JoinIndexComponent,
     JoinFormComponent,
+    CarouselComponent,
+    LazyimgDirective,
   ],
-  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), IvyCarouselModule],
   providers: [],
   bootstrap: [AppComponent],
 })

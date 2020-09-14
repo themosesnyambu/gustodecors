@@ -1,14 +1,13 @@
 @use '../../stylesheets/color/color.scss';
 @use '../../stylesheets/mixins/layout';
 
-
 .home {
-  width: 100vw;;
+  width: 100vw;
   .patha {
     position: absolute;
     top: 60%;
     width: 100%;
-    height: 800px;;
+    height: 800px;
     z-index: 0;
   }
 
@@ -19,19 +18,30 @@
     .landing-slide {
       position: relative;
       height: inherit;
+
+      .home-carousel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 300px;
+      }
     }
 
     .call-to-action {
       position: relative;
       height: inherit;
-      background-image: url("../../../assets/images/homebgsmall.jpg");
+      background-image: url("../../../assets/images/bg.jpg");
       background: no-repeat cover;
       background-size: 100% 100%;
       color: color.$black;
 
       .overlay {
+        height: 100%;
+        width: 100%;
         background-color: color.$white;
-        opacity: 0.9;
+        opacity: .6;
       }
       .CTA {
         position: absolute;
@@ -86,7 +96,6 @@
 
 @media (min-width: 600px) {
   .home {
-
     .patha {
       top: 60%;
       height: 1400px;
@@ -94,9 +103,7 @@
     }
 
     .landing {
-
       .call-to-action {
-
         .CTA {
           top: 50%;
           left: 50%;
@@ -108,7 +115,6 @@
       height: 700px;
 
       .overlay {
-
         .goals {
           top: 60%;
           width: 300px;
@@ -120,7 +126,6 @@
 
 @media (min-width: 1025px) {
   .home {
-
     .patha {
       top: 60%;
       height: 1400px;
@@ -137,7 +142,7 @@
       }
 
       .call-to-action {
-        background-image: url("../../../assets/images/home-bg.jpg");
+        background-image: url("../../../assets/images/bg.jpg");
         grid-column: 2/3;
 
         .CTA {
