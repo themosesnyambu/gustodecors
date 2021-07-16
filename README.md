@@ -1,27 +1,54 @@
-# Gustodecors
+# Gustor Decors
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
+Gusto Decors provides interior design and event planning services.
 
-## Development server
+## Tech Stack Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Node.js](https://nodejs.org/)
+- [Angular](https://angular.io/)
+- [Html]()
+- [CSS]()
+- [Webpack](https://webpack.js.org/)
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Development**
 
-## Build
+To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer. From your command line:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+# Clone this repository
+$ git clone https://github.com/themosesnyambu/gustodecors
+```
 
-## Running unit tests
+Next, you will need to install the required dependencies for the project to be up and running on a development server on your machine. Simply enter the repository and do the following:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+# cd into the repository
+$ cd gustodecors
 
-## Running end-to-end tests
+# install the dependencies
+$ npm install
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Strat the development sever
+$ npm run dev
+```
+Upon running the last command, a new browser window should be opened at `localhost:4200` on your machine.
 
-## Further help
+**Running Tests**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+End to End and Unit tests are set up on this repository with Cypress, Jest and Enzyme and dependencies to enable them work are included in the `package.json` file. To run the tests, you can do the following:
+
+```bash
+# Enter the project's directory
+$ cd gustodecors/
+
+# To run the available unit tests
+$ npm test
+
+# To run tests with coverage reports
+$ npm run test:coverage
+
+# To run end to end tests with Cypress
+$ npm run e2e:test
+```
